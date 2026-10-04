@@ -1,0 +1,1756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stulovax Finance — Dangote IPO Investor Briefing</title>
+    <meta name="description" content="Register for the exclusive Stulovax Finance Dangote IPO Investor Briefing. Free. September 2025." />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      :root {
+        --gold:    #f5c457;
+        --gold-d:  #c9a52e;
+        --gold-bg: rgba(245,196,87,0.10);
+        --gold-bd: rgba(245,196,87,0.35);
+        --navy:    #071a33;
+        --navy-2:  #1e3a5f;
+        --ink-2:   #3a506b;
+        --muted:   #6b7f96;
+        --muted-2: #9bafc4;
+        --bg:      #ffffff;
+        --surface: #f7f9fc;
+        --border:  #dde4ed;
+        --green:   #15803d;
+        --teal:    #0891b2;
+        --radius:  10px;
+      }
+
+      html { font-size: 16px; scroll-behavior: smooth; }
+
+      body {
+        font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+        background: var(--bg);
+        color: var(--navy);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a { color: var(--gold-d); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      img, svg { display: block; max-width: 100%; }
+
+      /* ─── Layout ─────────────────────────────────────────── */
+      .container { max-width: 860px; margin: 0 auto; padding: 0 32px; }
+      .section { padding: 72px 0; }
+      .section--alt { background: var(--surface); }
+      .section--dark { background: var(--navy); color: #fff; }
+
+      /* ─── Header ─────────────────────────────────────────── */
+      .site-header {
+        background: var(--bg);
+        border-bottom: 1px solid var(--border);
+        padding: 18px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        font-family: 'Syne', sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        color: var(--navy);
+        text-decoration: none;
+      }
+      .logo svg { width: 30px; height: 30px; flex-shrink: 0; }
+      .logo span { color: var(--gold-d); }
+      .header-tag {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: var(--muted);
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 100px;
+        padding: 4px 12px;
+      }
+      .header-cta {
+        background: var(--gold);
+        color: var(--navy);
+        font-weight: 600;
+        font-size: 13px;
+        padding: 8px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background 0.15s;
+      }
+      .header-cta:hover { background: var(--gold-d); text-decoration: none; color: #fff; }
+
+      /* ─── Hero ───────────────────────────────────────────── */
+      .hero { padding: 80px 0 64px; }
+      .hero-inner { display: grid; grid-template-columns: 1fr 360px; gap: 48px; align-items: center; }
+
+      .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--gold-bg);
+        border: 1px solid var(--gold-bd);
+        border-radius: 100px;
+        padding: 5px 14px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: #7a5c00;
+        margin-bottom: 24px;
+      }
+      .hero-badge-dot {
+        width: 6px; height: 6px;
+        border-radius: 50%;
+        background: var(--gold-d);
+        animation: pulse 2s ease-in-out infinite;
+      }
+      @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+      .hero-title {
+        font-family: 'Syne', sans-serif;
+        font-size: clamp(36px, 5.5vw, 58px);
+        font-weight: 800;
+        line-height: 1.05;
+        letter-spacing: -0.03em;
+        margin-bottom: 20px;
+      }
+      .hero-title em { font-style: normal; color: var(--gold-d); }
+
+      .hero-sub {
+        font-size: 16px;
+        color: var(--ink-2);
+        line-height: 1.7;
+        margin-bottom: 32px;
+        max-width: 460px;
+      }
+
+      .hero-chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 36px;
+      }
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 100px;
+        padding: 6px 13px;
+        font-size: 12px;
+        color: var(--ink-2);
+      }
+      .chip svg { width: 12px; height: 12px; flex-shrink: 0; }
+      .chip strong { color: var(--navy); font-weight: 600; }
+
+      .hero-cta-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--gold);
+        color: var(--navy);
+        font-family: 'DM Sans', sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 14px 28px;
+        border-radius: var(--radius);
+        text-decoration: none;
+        transition: background 0.15s, transform 0.15s;
+      }
+      .btn-primary:hover { background: var(--gold-d); color: #fff; transform: translateY(-1px); text-decoration: none; }
+      .btn-ghost {
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      /* Hero card */
+      .hero-card {
+        background: var(--navy);
+        border-radius: 16px;
+        padding: 28px;
+        color: #fff;
+      }
+      .hero-card-label {
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.45);
+        margin-bottom: 16px;
+      }
+      .hero-card-stat {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 20px;
+      }
+      .stat-row { display: flex; justify-content: space-between; align-items: center; }
+      .stat-label { font-size: 12px; color: rgba(255,255,255,0.55); }
+      .stat-value { font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 700; color: #fff; }
+      .stat-value.gold { color: var(--gold); }
+      .hero-card-divider { height: 1px; background: rgba(255,255,255,0.08); margin: 4px 0; }
+      .hero-card-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 16px;
+      }
+      .sector-tag {
+        font-size: 10px;
+        padding: 3px 9px;
+        border-radius: 100px;
+        background: rgba(245,196,87,0.12);
+        border: 1px solid rgba(245,196,87,0.25);
+        color: var(--gold);
+        font-weight: 500;
+      }
+      .hero-card-note {
+        margin-top: 18px;
+        padding-top: 16px;
+        border-top: 1px solid rgba(255,255,255,0.08);
+        font-size: 11px;
+        color: rgba(255,255,255,0.45);
+        line-height: 1.6;
+      }
+
+      /* ─── Section headers ─────────────────────────────────── */
+      .section-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.09em;
+        color: var(--gold-d);
+        background: var(--gold-bg);
+        border: 1px solid var(--gold-bd);
+        border-radius: 100px;
+        padding: 4px 12px;
+        margin-bottom: 16px;
+      }
+      .section-eyebrow-dot {
+        width: 5px; height: 5px;
+        border-radius: 50%;
+        background: var(--gold-d);
+      }
+      .section-title {
+        font-family: 'Syne', sans-serif;
+        font-size: clamp(26px, 4vw, 38px);
+        font-weight: 800;
+        letter-spacing: -0.025em;
+        line-height: 1.1;
+        margin-bottom: 14px;
+      }
+      .section-title em { font-style: normal; color: var(--gold-d); }
+      .section-title.light { color: #fff; }
+      .section-desc {
+        font-size: 15px;
+        color: var(--ink-2);
+        line-height: 1.75;
+        max-width: 520px;
+        margin-bottom: 40px;
+      }
+      .section-desc.light { color: rgba(255,255,255,0.65); }
+
+      /* ─── What is the IPO ─────────────────────────────────── */
+      .ipo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 36px; }
+      .ipo-card {
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 22px;
+      }
+      .ipo-card--full { grid-column: 1 / -1; }
+      .ipo-card-icon {
+        width: 38px; height: 38px;
+        background: var(--gold-bg);
+        border: 1px solid var(--gold-bd);
+        border-radius: 9px;
+        display: flex; align-items: center; justify-content: center;
+        margin-bottom: 14px;
+        color: var(--gold-d);
+      }
+      .ipo-card-icon svg { width: 18px; height: 18px; }
+      .ipo-card-title {
+        font-family: 'Syne', sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 7px;
+      }
+      .ipo-card-text { font-size: 13px; color: var(--ink-2); line-height: 1.65; }
+      .ipo-card-highlight {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--gold-bg);
+        border: 1px solid var(--gold-bd);
+        border-radius: 8px;
+        padding: 11px 14px;
+        margin-top: 12px;
+        font-size: 12px;
+        color: #7a5c00;
+        font-weight: 500;
+      }
+      .ipo-card-highlight svg { width: 13px; height: 13px; flex-shrink: 0; }
+
+      /* Sectors strip */
+      .sectors-strip {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 14px;
+      }
+      .sector-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 6px 13px;
+        border-radius: 100px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        color: var(--ink-2);
+      }
+      .sector-pill-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+
+      /* ─── Timeline ────────────────────────────────────────── */
+      .timeline {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2px;
+        margin-top: 36px;
+      }
+      .tl-phase {
+        padding: 24px;
+        border-radius: 0;
+        position: relative;
+      }
+      .tl-phase:first-child { border-radius: 12px 0 0 12px; }
+      .tl-phase:last-child { border-radius: 0 12px 12px 0; }
+      .tl-phase--prep { background: var(--surface); border: 1px solid var(--border); }
+      .tl-phase--now { background: var(--navy); color: #fff; }
+      .tl-phase--post { background: #fff3f0; border: 1px solid #fbd0c3; }
+      .tl-label {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      .tl-phase--prep .tl-label { color: var(--muted); }
+      .tl-phase--now .tl-label { color: var(--gold); }
+      .tl-phase--post .tl-label { color: #c0392b; }
+      .tl-title {
+        font-family: 'Syne', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        line-height: 1.2;
+      }
+      .tl-phase--prep .tl-title { color: var(--navy); }
+      .tl-phase--now .tl-title { color: #fff; }
+      .tl-phase--post .tl-title { color: #7a1e0e; }
+      .tl-desc { font-size: 12px; line-height: 1.6; }
+      .tl-phase--prep .tl-desc { color: var(--ink-2); }
+      .tl-phase--now .tl-desc { color: rgba(255,255,255,0.65); }
+      .tl-phase--post .tl-desc { color: #a0342a; }
+      .tl-you-are {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        background: var(--gold);
+        color: var(--navy);
+        padding: 3px 8px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+      }
+
+      /* ─── Who is this for ─────────────────────────────────── */
+      .profiles-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 36px; }
+      .profile-card {
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 22px;
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        transition: border-color 0.15s, box-shadow 0.15s;
+      }
+      .profile-card:hover {
+        border-color: var(--gold-bd);
+        box-shadow: 0 4px 16px rgba(245,196,87,0.1);
+      }
+      .profile-icon {
+        width: 44px; height: 44px;
+        border-radius: 10px;
+        background: var(--navy);
+        display: flex; align-items: center; justify-content: center;
+        flex-shrink: 0;
+        color: var(--gold);
+        font-family: 'Syne', sans-serif;
+        font-size: 16px;
+        font-weight: 800;
+      }
+      .profile-name {
+        font-family: 'Syne', sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+      .profile-desc { font-size: 12px; color: var(--ink-2); line-height: 1.55; }
+      .profile-fit {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: 10px;
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--green);
+      }
+      .profile-fit svg { width: 11px; height: 11px; }
+
+      .caution-box {
+        margin-top: 28px;
+        padding: 20px 24px;
+        background: #fffbf0;
+        border: 1px solid #ffe0a0;
+        border-radius: 12px;
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+      }
+      .caution-icon { color: #b45309; flex-shrink: 0; margin-top: 1px; }
+      .caution-icon svg { width: 16px; height: 16px; }
+      .caution-title { font-size: 13px; font-weight: 600; color: #7a3c00; margin-bottom: 6px; }
+      .caution-list { font-size: 12px; color: #8a5100; line-height: 1.7; list-style: none; }
+      .caution-list li::before { content: "— "; }
+
+      /* ─── What you'll get ─────────────────────────────────── */
+      .deliverables { display: flex; flex-direction: column; gap: 12px; margin-top: 32px; }
+      .dlv {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 18px 20px;
+        background: rgba(255,255,255,0.06);
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 12px;
+      }
+      .dlv-num {
+        width: 32px; height: 32px;
+        border-radius: 8px;
+        background: var(--gold);
+        color: var(--navy);
+        font-family: 'Syne', sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        display: flex; align-items: center; justify-content: center;
+        flex-shrink: 0;
+      }
+      .dlv-title {
+        font-family: 'Syne', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 3px;
+      }
+      .dlv-desc { font-size: 12px; color: rgba(255,255,255,0.55); line-height: 1.5; }
+
+      /* ─── Mistakes ────────────────────────────────────────── */
+      .mistakes { display: flex; flex-direction: column; gap: 12px; margin-top: 32px; }
+      .mistake {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        padding: 18px 20px;
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+      }
+      .mistake-num {
+        font-family: 'Syne', sans-serif;
+        font-size: 28px;
+        font-weight: 800;
+        color: var(--gold);
+        line-height: 1;
+        flex-shrink: 0;
+        width: 32px;
+        text-align: center;
+      }
+      .mistake-title { font-size: 14px; font-weight: 600; color: var(--navy); margin-bottom: 4px; }
+      .mistake-fix {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 12px;
+        color: var(--green);
+        font-weight: 500;
+        margin-top: 6px;
+      }
+      .mistake-fix svg { width: 11px; height: 11px; flex-shrink: 0; }
+      .mistake-body { font-size: 12px; color: var(--ink-2); line-height: 1.6; }
+
+      /* ─── Form section ────────────────────────────────────── */
+      .form-section { padding: 80px 0; background: var(--surface); }
+      .form-wrapper {
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 40px;
+        box-shadow: 0 8px 32px rgba(7,26,51,0.07);
+        margin-top: 36px;
+      }
+
+      /* ─── Progress bar ────────────────────────────────────── */
+      .progress-meta {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        color: var(--muted);
+        margin-bottom: 8px;
+      }
+      .progress-pct { color: var(--gold-d); font-weight: 600; }
+      .progress-track {
+        height: 3px;
+        background: var(--border);
+        border-radius: 100px;
+        overflow: hidden;
+        margin-bottom: 28px;
+      }
+      .progress-fill {
+        height: 100%;
+        background: linear-gradient(90deg, var(--gold), var(--gold-d));
+        border-radius: 100px;
+        transition: width 0.4s cubic-bezier(.4,0,.2,1);
+        width: 0%;
+      }
+
+      /* ─── Step nav ────────────────────────────────────────── */
+      .step-nav {
+        display: flex;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 4px;
+        margin-bottom: 36px;
+        gap: 3px;
+      }
+      .step-btn {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        padding: 10px 6px;
+        background: transparent;
+        border: none;
+        border-radius: 9px;
+        cursor: default;
+        color: var(--muted-2);
+        font-family: 'DM Sans', sans-serif;
+        font-size: 11px;
+        letter-spacing: 0.01em;
+        transition: color 0.2s;
+        white-space: nowrap;
+      }
+      .step-num {
+        width: 24px; height: 24px;
+        border-radius: 50%;
+        background: #eef2f7;
+        display: flex; align-items: center; justify-content: center;
+        font-size: 10px;
+        font-weight: 700;
+        transition: background 0.2s, color 0.2s;
+      }
+      .step-btn.is-active { color: var(--navy); font-weight: 600; }
+      .step-btn.is-active .step-num { background: var(--gold); color: var(--navy); }
+      .step-btn.is-done { color: var(--ink-2); }
+      .step-btn.is-done .step-num { background: var(--green); color: #fff; }
+
+      /* ─── Step panels ─────────────────────────────────────── */
+      .step { display: none; }
+      .step.is-active { display: block; animation: fadeUp 0.22s ease; }
+      @keyframes fadeUp { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
+
+      .step-heading { margin-bottom: 24px; }
+      .step-title {
+        font-family: 'Syne', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+      .step-desc { font-size: 13px; color: var(--muted); }
+
+      /* ─── Fields ──────────────────────────────────────────── */
+      .field { margin-bottom: 16px; }
+      .field:last-child { margin-bottom: 0; }
+      .field-row { display: grid; gap: 12px; margin-bottom: 16px; }
+      .field-row.col-2 { grid-template-columns: 1fr 1fr; }
+
+      .field-label {
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--navy-2);
+        margin-bottom: 6px;
+      }
+      .field-label .req { color: var(--gold-d); margin-left: 2px; }
+      .field-hint { font-size: 11px; font-weight: 400; color: var(--muted); margin-left: 5px; }
+
+      .input, .select {
+        display: block;
+        width: 100%;
+        padding: 11px 14px;
+        background: var(--bg);
+        border: 1.5px solid #c4cdd9;
+        border-radius: var(--radius);
+        font-family: 'DM Sans', sans-serif;
+        font-size: 14px;
+        color: var(--navy);
+        outline: none;
+        transition: border-color 0.15s, box-shadow 0.15s;
+        -webkit-appearance: none;
+        appearance: none;
+      }
+      .input::placeholder { color: var(--muted-2); }
+      .input:focus, .select:focus {
+        border-color: var(--gold);
+        box-shadow: 0 0 0 3px rgba(245,196,87,0.18);
+      }
+      .select {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b7f96' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 13px center;
+        padding-right: 34px;
+        cursor: pointer;
+      }
+      .select option { background: #fff; color: var(--navy); }
+
+      /* ─── Radio cards ─────────────────────────────────────── */
+      .radio-cards { display: grid; gap: 8px; }
+      .radio-cards.col-2 { grid-template-columns: 1fr 1fr; }
+      .radio-cards.inline { grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); }
+
+      .rc { cursor: pointer; }
+      .rc input[type="radio"] { position: absolute; opacity: 0; pointer-events: none; }
+      .rc-body {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 13px 15px;
+        background: var(--surface);
+        border: 1.5px solid var(--border);
+        border-radius: 10px;
+        transition: border-color 0.15s, background 0.15s;
+        cursor: pointer;
+      }
+      .rc input:checked ~ .rc-body {
+        border-color: var(--gold);
+        background: var(--gold-bg);
+      }
+      .rc-indicator {
+        width: 16px; height: 16px;
+        border-radius: 50%;
+        border: 1.5px solid #c4cdd9;
+        flex-shrink: 0;
+        margin-top: 2px;
+        transition: all 0.15s;
+        position: relative;
+      }
+      .rc input:checked ~ .rc-body .rc-indicator {
+        border-color: var(--gold-d);
+        background: var(--gold);
+      }
+      .rc-indicator::after {
+        content: '';
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%,-50%);
+        width: 5px; height: 5px;
+        border-radius: 50%;
+        background: var(--navy);
+        opacity: 0;
+        transition: opacity 0.15s;
+      }
+      .rc input:checked ~ .rc-body .rc-indicator::after { opacity: 1; }
+      .rc-text strong {
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--navy);
+        line-height: 1.3;
+        margin-bottom: 2px;
+      }
+      .rc-text span { font-size: 11px; color: var(--ink-2); }
+      .radio-cards.inline .rc-body { align-items: center; padding: 9px 12px; }
+      .radio-cards.inline .rc-text strong { margin-bottom: 0; font-size: 12px; }
+      .radio-cards.inline .rc-text span { display: none; }
+
+      /* ─── Checkboxes ──────────────────────────────────────── */
+      .check-cards { display: flex; flex-direction: column; gap: 7px; }
+      .cc { cursor: pointer; }
+      .cc input[type="checkbox"] { position: absolute; opacity: 0; pointer-events: none; }
+      .cc-body {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 15px;
+        background: var(--surface);
+        border: 1.5px solid var(--border);
+        border-radius: 10px;
+        font-size: 13px;
+        color: var(--ink-2);
+        transition: all 0.15s;
+        cursor: pointer;
+      }
+      .cc input:checked ~ .cc-body {
+        border-color: var(--teal);
+        color: var(--navy);
+        background: rgba(8,145,178,0.05);
+      }
+      .cc-indicator {
+        width: 16px; height: 16px;
+        border-radius: 4px;
+        border: 1.5px solid #c4cdd9;
+        flex-shrink: 0;
+        display: flex; align-items: center; justify-content: center;
+        transition: all 0.15s;
+      }
+      .cc input:checked ~ .cc-body .cc-indicator {
+        background: var(--teal);
+        border-color: var(--teal);
+      }
+      .cc-indicator svg { display: none; width: 9px; height: 9px; }
+      .cc input:checked ~ .cc-body .cc-indicator svg { display: block; }
+
+      /* ─── Declarations ────────────────────────────────────── */
+      .decl-label {
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        margin: 22px 0 10px;
+      }
+      .decl-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--border);
+        cursor: pointer;
+        user-select: none;
+      }
+      .decl-item:last-child { border-bottom: none; padding-bottom: 0; }
+      .decl-check {
+        width: 17px; height: 17px;
+        border-radius: 4px;
+        border: 1.5px solid #c4cdd9;
+        flex-shrink: 0;
+        margin-top: 1px;
+        display: flex; align-items: center; justify-content: center;
+        transition: all 0.15s;
+        background: transparent;
+      }
+      .decl-check.is-checked { background: var(--green); border-color: var(--green); }
+      .decl-check svg { display: none; width: 9px; height: 9px; }
+      .decl-check.is-checked svg { display: block; }
+      .decl-text { font-size: 12px; color: var(--ink-2); line-height: 1.55; }
+      .decl-text strong { color: var(--navy); font-weight: 600; }
+
+      /* ─── Callout ─────────────────────────────────────────── */
+      .callout-info {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        background: rgba(8,145,178,0.06);
+        border: 1px solid rgba(8,145,178,0.2);
+        border-radius: 9px;
+        padding: 11px 14px;
+        font-size: 12px;
+        color: #0e7490;
+        margin-top: 12px;
+        line-height: 1.55;
+      }
+      .callout-info svg { width: 13px; height: 13px; flex-shrink: 0; margin-top: 1px; }
+
+      /* ─── Form footer ─────────────────────────────────────── */
+      .form-footer { margin-top: 32px; display: flex; flex-direction: column; gap: 10px; }
+      .status-msg { font-size: 12px; color: #c0392b; display: none; text-align: center; padding: 8px 0; }
+      .status-msg.is-visible { display: block; }
+
+      .btn-continue, .btn-submit {
+        width: 100%;
+        padding: 14px 24px;
+        background: var(--gold);
+        color: var(--navy);
+        border: none;
+        border-radius: var(--radius);
+        font-family: 'DM Sans', sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        transition: background 0.15s, transform 0.15s;
+      }
+      .btn-continue:hover, .btn-submit:hover {
+        background: var(--gold-d);
+        color: #fff;
+        transform: translateY(-1px);
+      }
+      .btn-continue:disabled, .btn-submit:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+      .btn-back {
+        width: 100%;
+        padding: 11px 24px;
+        background: transparent;
+        color: var(--muted);
+        border: 1.5px solid var(--border);
+        border-radius: var(--radius);
+        font-family: 'DM Sans', sans-serif;
+        font-size: 13px;
+        cursor: pointer;
+        transition: color 0.15s, border-color 0.15s;
+      }
+      .btn-back:hover { color: var(--navy); border-color: #c4cdd9; }
+
+      /* ─── Footer ──────────────────────────────────────────── */
+      .site-footer {
+        background: var(--navy);
+        padding: 36px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+      .footer-text { font-size: 11px; color: rgba(255,255,255,0.4); line-height: 1.8; }
+      .footer-text a { color: rgba(255,255,255,0.55); }
+      .footer-text a:hover { color: var(--gold); text-decoration: none; }
+      .footer-badge {
+        font-size: 9px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        padding: 4px 10px;
+        border: 1px solid rgba(255,255,255,0.15);
+        border-radius: 4px;
+        color: rgba(255,255,255,0.35);
+      }
+
+      /* ─── Responsive ──────────────────────────────────────── */
+      @media (max-width: 720px) {
+        .container { padding: 0 20px; }
+        .site-header { padding: 16px 20px; }
+        .header-tag { display: none; }
+        .hero-inner { grid-template-columns: 1fr; }
+        .hero-card { display: none; }
+        .hero { padding: 48px 0 40px; }
+        .section { padding: 52px 0; }
+        .ipo-grid { grid-template-columns: 1fr; }
+        .timeline { grid-template-columns: 1fr; gap: 8px; }
+        .tl-phase:first-child { border-radius: 12px; }
+        .tl-phase:last-child { border-radius: 12px; }
+        .tl-phase--prep,.tl-phase--post { border-radius: 12px; }
+        .profiles-grid { grid-template-columns: 1fr; }
+        .field-row.col-2 { grid-template-columns: 1fr; }
+        .radio-cards.col-2 { grid-template-columns: 1fr; }
+        .step-btn { font-size: 10px; padding: 8px 3px; }
+        .step-num { width: 20px; height: 20px; font-size: 10px; }
+        .form-wrapper { padding: 24px 20px; }
+        .site-footer { padding: 28px 20px; flex-direction: column; align-items: flex-start; }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header class="site-header">
+      <a href="https://stulovax.com" class="logo" aria-label="Stulovax home">
+        <svg viewBox="0 0 72 72" role="img" aria-hidden="true">
+          <path fill="#f5c457" d="M44.8 7.5c9.7 0 17.6 7.8 17.6 17.5 0 7-4.1 13.1-10.1 15.9-3 1.4-5.1 4-5.8 7.2C44.7 56.1 37.8 62 29.6 62c-9.7 0-17.6-7.8-17.6-17.5 0-7.2 4.3-13.5 10.6-16.1 2.8-1.2 4.8-3.6 5.6-6.6C30.1 13.3 36.8 7.5 44.8 7.5Z"/>
+          <path fill="#071a33" d="M45 16.2c2.9 0 5.5.8 7.5 2.5-6.6 1.6-11.3 6.2-13.6 13.6-2.5 8.2-7.4 13.6-14.7 15.9 1.2-5.9 5-10.3 11.4-13.2 4.6-2 7.3-5.4 8.3-10.4.9-4.5 3.4-8.4 7.4-8.4h-6.3Zm-17.7 39.6c-2.8 0-5.4-.8-7.5-2.5 6.6-1.6 11.3-6.2 13.6-13.6 2.5-8.2 7.4-13.6 14.7-15.9-1.2 5.9-5 10.3-11.4 13.2-4.6 2-7.3 5.4-8.3 10.4-.9 4.5-3.4 8.4-7.4 8.4h6.3Z"/>
+        </svg>
+        STULO<span>VAX</span>
+      </a>
+      <span class="header-tag">Finance Division &middot; Confidential</span>
+      <a href="#register" class="header-cta">Register Free &rarr;</a>
+    </header>
+
+    <!-- ═══════════════════════════════════════════════════════ HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <div>
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              Dangote IPO &middot; September 2025
+            </div>
+            <h1 class="hero-title">
+              Dangote is<br>
+              about to go<br>
+              <em>public.</em>
+            </h1>
+            <p class="hero-sub">
+              Are you positioned — or will you watch from the sidelines again?
+              Nigeria's largest conglomerate is preparing one of the biggest IPOs in
+              African history. This is not a rumour. This is a window.
+            </p>
+            <div class="hero-chips">
+              <span class="chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+                <strong>Free</strong> briefing
+              </span>
+              <span class="chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <strong>Limited</strong> spaces
+              </span>
+              <span class="chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Reply within <strong>24 hours</strong>
+              </span>
+            </div>
+            <div class="hero-cta-row">
+              <a href="#register" class="btn-primary">Register for Free &rarr;</a>
+              <a href="#what-you-get" class="btn-ghost">See what&rsquo;s included &darr;</a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <p class="hero-card-label">IPO Overview &middot; Dangote Group</p>
+            <div class="hero-card-stat">
+              <div class="stat-row">
+                <span class="stat-label">Listing window</span>
+                <span class="stat-value gold">September 2025</span>
+              </div>
+              <div class="hero-card-divider"></div>
+              <div class="stat-row">
+                <span class="stat-label">Market</span>
+                <span class="stat-value">Nigerian Stock Exchange</span>
+              </div>
+              <div class="hero-card-divider"></div>
+              <div class="stat-row">
+                <span class="stat-label">Asset type</span>
+                <span class="stat-value">Public equity (IPO)</span>
+              </div>
+              <div class="hero-card-divider"></div>
+              <div class="stat-row">
+                <span class="stat-label">Scale</span>
+                <span class="stat-value gold">Largest in African history</span>
+              </div>
+            </div>
+            <div class="hero-card-tags">
+              <span class="sector-tag">Cement</span>
+              <span class="sector-tag">Refining</span>
+              <span class="sector-tag">Fertilisers</span>
+              <span class="sector-tag">Food</span>
+              <span class="sector-tag">Petrochemicals</span>
+            </div>
+            <p class="hero-card-note">
+              Early registrants receive the full Stulovax Finance written IPO report before the live session.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════ WHAT IS IT -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-eyebrow"><span class="section-eyebrow-dot"></span> What is the Dangote IPO?</div>
+        <h2 class="section-title">Plain language.<br><em>No jargon.</em></h2>
+        <p class="section-desc">
+          An IPO (Initial Public Offering) means Dangote Industries is selling shares of the company
+          to the public for the first time. Buying in means owning a piece of Nigeria's biggest business empire.
+        </p>
+
+        <div class="ipo-grid">
+          <div class="ipo-card">
+            <div class="ipo-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-4 0v2"/><path d="M8 7V5a2 2 0 0 0-4 0v2"/></svg>
+            </div>
+            <p class="ipo-card-title">What is an IPO?</p>
+            <p class="ipo-card-text">
+              A company goes from privately owned to publicly traded. Shares are offered to investors
+              at a set price before listing on the stock exchange. Once listed, you can buy or sell freely.
+            </p>
+          </div>
+          <div class="ipo-card">
+            <div class="ipo-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <p class="ipo-card-title">Sectors covered</p>
+            <p class="ipo-card-text">
+              Dangote Group spans five industries that underpin Nigeria's economy — giving investors
+              exposure to infrastructure-grade assets previously reserved for institutional players.
+            </p>
+            <div class="sectors-strip">
+              <span class="sector-pill"><span class="sector-pill-dot"></span>Cement</span>
+              <span class="sector-pill"><span class="sector-pill-dot"></span>Petroleum refining</span>
+              <span class="sector-pill"><span class="sector-pill-dot"></span>Fertilisers</span>
+              <span class="sector-pill"><span class="sector-pill-dot"></span>Food processing</span>
+              <span class="sector-pill"><span class="sector-pill-dot"></span>Petrochemicals</span>
+            </div>
+          </div>
+          <div class="ipo-card ipo-card--full">
+            <div class="ipo-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <p class="ipo-card-title">The headline fact</p>
+            <p class="ipo-card-text">
+              The Dangote Refinery is the world's largest single-train petroleum refinery —
+              with a capacity of 650,000 barrels per day. Nigeria's refining capacity deficit creates
+              a structural demand floor for its output. This is not a speculative bet. It is a bet on infrastructure.
+            </p>
+            <div class="ipo-card-highlight">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg>
+              Retail investors can now access the same asset class that was previously only available to institutional players.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════ TIMELINE -->
+    <section class="section">
+      <div class="container">
+        <div class="section-eyebrow"><span class="section-eyebrow-dot"></span> Why timing matters</div>
+        <h2 class="section-title">First-mover windows<br><em>close fast.</em></h2>
+        <p class="section-desc">
+          When a company goes public, early investors often see the most significant price movement
+          in the first weeks. The preparation window — before listing — is where smart money moves.
+        </p>
+
+        <div class="timeline">
+          <div class="tl-phase tl-phase--prep">
+            <p class="tl-label">Phase 1</p>
+            <p class="tl-title">Pre-IPO Preparation</p>
+            <p class="tl-desc">Analyse the prospectus, model entry scenarios, understand allotment mechanics, set your position size. This is where the work happens.</p>
+          </div>
+          <div class="tl-phase tl-phase--now">
+            <p class="tl-you-are">&#x2713; You are here</p>
+            <p class="tl-label">Opportunity Window</p>
+            <p class="tl-title">Register &amp; Prepare Now</p>
+            <p class="tl-desc">The Stulovax Finance IPO Briefing gives you the full analysis, risk models, and entry scenarios before the listing window opens.</p>
+          </div>
+          <div class="tl-phase tl-phase--post">
+            <p class="tl-label">Phase 3 — Avoid</p>
+            <p class="tl-title">Post-listing FOMO</p>
+            <p class="tl-desc">Prices have already adjusted. Retail investors buy at the peak. Don't be the investor who acts after the window closes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════ WHO IS IT FOR -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-eyebrow"><span class="section-eyebrow-dot"></span> Who is this for?</div>
+        <h2 class="section-title">Honest answer<br><em>from our team.</em></h2>
+        <p class="section-desc">
+          Not every IPO is right for every investor. Here's how to think about it clearly.
+        </p>
+
+        <div class="profiles-grid">
+          <div class="profile-card">
+            <div class="profile-icon">C</div>
+            <div>
+              <p class="profile-name">CEO / Business Owner</p>
+              <p class="profile-desc">You run a business and want portfolio diversification into a blue-chip Nigerian asset outside your own industry.</p>
+              <p class="profile-fit">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Strong fit
+              </p>
+            </div>
+          </div>
+          <div class="profile-card">
+            <div class="profile-icon">P</div>
+            <div>
+              <p class="profile-name">9&ndash;5 Professional</p>
+              <p class="profile-desc">You have employment income and want to make it work harder. This is how you move beyond savings accounts.</p>
+              <p class="profile-fit">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Strong fit
+              </p>
+            </div>
+          </div>
+          <div class="profile-card">
+            <div class="profile-icon">D</div>
+            <div>
+              <p class="profile-name">Nigerian in the Diaspora</p>
+              <p class="profile-desc">You live abroad and want meaningful exposure to the Nigerian market — in a structured, transparent vehicle.</p>
+              <p class="profile-fit">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Strong fit
+              </p>
+            </div>
+          </div>
+          <div class="profile-card">
+            <div class="profile-icon">F</div>
+            <div>
+              <p class="profile-name">Fund / Institutional Investor</p>
+              <p class="profile-desc">You represent a fund, firm, or investment vehicle and need professional-grade IPO analysis and entry modelling.</p>
+              <p class="profile-fit">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Strong fit
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="caution-box">
+          <div class="caution-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div>
+            <p class="caution-title">Proceed with caution if:</p>
+            <ul class="caution-list">
+              <li>You need the funds back within 12 months</li>
+              <li>You have zero experience with equity markets and no support</li>
+              <li>You are relying on borrowed capital to invest</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════ WHAT YOU GET -->
+    <section id="what-you-get" class="section section--dark">
+      <div class="container">
+        <div class="section-eyebrow" style="background:rgba(245,196,87,0.15);border-color:rgba(245,196,87,0.3);color:var(--gold);">
+          <span class="section-eyebrow-dot"></span> What you get
+        </div>
+        <h2 class="section-title light">Everything you need<br><em>before the listing opens.</em></h2>
+        <p class="section-desc light">
+          The Stulovax Finance IPO Briefing covers every angle. Early registrants also receive
+          the full written IPO report before the live session.
+        </p>
+
+        <div class="deliverables">
+          <div class="dlv">
+            <div class="dlv-num">1</div>
+            <div>
+              <p class="dlv-title">Full IPO analysis and sector breakdown</p>
+              <p class="dlv-desc">Our finance team's complete analysis of the Dangote listing — valuation frameworks, sector tailwinds, and risk factors you need to understand before entry.</p>
+            </div>
+          </div>
+          <div class="dlv">
+            <div class="dlv-num">2</div>
+            <div>
+              <p class="dlv-title">Entry scenario modelling for different budgets</p>
+              <p class="dlv-desc">Whether you're allocating ₦200k or ₦10m+, we model what entry looks like for your specific range — including allotment mechanics and position sizing.</p>
+            </div>
+          </div>
+          <div class="dlv">
+            <div class="dlv-num">3</div>
+            <div>
+              <p class="dlv-title">Risk assessment and naira volatility considerations</p>
+              <p class="dlv-desc">A clear-eyed view of the risks: naira exposure, regulatory environment, post-IPO float size, and lock-in periods — so you enter with full clarity.</p>
+            </div>
+          </div>
+          <div class="dlv">
+            <div class="dlv-num">4</div>
+            <div>
+              <p class="dlv-title">Live Q&amp;A with the Stulovax Finance analysts</p>
+              <p class="dlv-desc">Bring your specific questions. Our analysts will address your situation directly during the live session.</p>
+            </div>
+          </div>
+          <div class="dlv">
+            <div class="dlv-num">5</div>
+            <div>
+              <p class="dlv-title">Written IPO preparation checklist and report</p>
+              <p class="dlv-desc">Early registrants receive the full written report before the live session — so you arrive informed, not overwhelmed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════ MISTAKES -->
+    <section class="section">
+      <div class="container">
+        <div class="section-eyebrow"><span class="section-eyebrow-dot"></span> Avoid these</div>
+        <h2 class="section-title">3 mistakes Nigerian investors<br><em>make at IPO time.</em></h2>
+        <p class="section-desc">
+          We've watched investors lose money at IPO launches — not because the company was bad,
+          but because they didn't prepare. Don't be this person.
+        </p>
+
+        <div class="mistakes">
+          <div class="mistake">
+            <div class="mistake-num">1</div>
+            <div>
+              <p class="mistake-title">Investing based on the brand name alone</p>
+              <p class="mistake-body">Dangote is iconic. But name recognition is not a valuation model. You need to understand the float structure, pricing mechanics, and sector exposure before committing capital.</p>
+              <p class="mistake-fix">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                The fix: attend the Stulovax Finance briefing and get the actual numbers.
+              </p>
+            </div>
+          </div>
+          <div class="mistake">
+            <div class="mistake-num">2</div>
+            <div>
+              <p class="mistake-title">Going in without understanding allotment mechanics</p>
+              <p class="mistake-body">You may apply for ₦500k and receive ₦120k worth of shares. Oversubscribed IPOs mean allotment ratios apply — plan for this before you decide your entry amount.</p>
+              <p class="mistake-fix">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                The fix: our entry scenario modelling accounts for allotment probabilities.
+              </p>
+            </div>
+          </div>
+          <div class="mistake">
+            <div class="mistake-num">3</div>
+            <div>
+              <p class="mistake-title">No exit strategy before entering</p>
+              <p class="mistake-body">Decide your target return and time horizon before you invest — not after. Investors who enter without a defined exit plan are the ones who panic-sell at the worst moments.</p>
+              <p class="mistake-fix">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                The fix: we'll help you define your exit parameters during the briefing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════ FORM -->
+    <section id="register" class="form-section">
+      <div class="container">
+        <div class="section-eyebrow"><span class="section-eyebrow-dot"></span> Register Free</div>
+        <h2 class="section-title">Secure your spot in<br><em>the IPO Briefing.</em></h2>
+        <p class="section-desc">
+          Complete this form so our finance team can assess your profile, match you to the right
+          entry scenario, and reach out with a personalised briefing before the listing window opens.
+        </p>
+
+        <div class="form-wrapper">
+
+          <!-- Progress -->
+          <div class="progress-meta">
+            <span id="stepLabel">Step 1 of 4 &mdash; Personal Details</span>
+            <span class="progress-pct" id="progressPct">0%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+
+          <!-- Step nav -->
+          <nav class="step-nav" aria-label="Form steps">
+            <div class="step-btn is-active" data-step="1"><span class="step-num">1</span>Personal</div>
+            <div class="step-btn" data-step="2"><span class="step-num">2</span>Location</div>
+            <div class="step-btn" data-step="3"><span class="step-num">3</span>Investment</div>
+            <div class="step-btn" data-step="4"><span class="step-num">4</span>Checklist</div>
+          </nav>
+
+          <form id="regForm" action="./submit.php" method="POST" accept-charset="UTF-8" novalidate>
+            <input type="hidden" name="success_redirect" value="https://stulovax.com/financial/thank-you.html" />
+            <input type="hidden" name="error_redirect" value="https://stulovax.com/financial/?error=1" />
+            <!-- Honeypot -->
+            <input type="text" name="website_url" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;" aria-hidden="true" />
+
+            <!-- ── Step 1: Personal ─────────────────────────── -->
+            <div class="step is-active" id="step1">
+              <div class="step-heading">
+                <p class="step-title">Personal Details</p>
+                <p class="step-desc">Tell us who you are so our team knows exactly who they're speaking with.</p>
+              </div>
+
+              <div class="field-row col-2">
+                <div class="field">
+                  <label class="field-label" for="first_name">First Name <span class="req">*</span></label>
+                  <input class="input" type="text" id="first_name" name="first_name" placeholder="e.g. Adaeze" autocomplete="given-name" />
+                </div>
+                <div class="field">
+                  <label class="field-label" for="last_name">Last Name <span class="req">*</span></label>
+                  <input class="input" type="text" id="last_name" name="last_name" placeholder="e.g. Okafor" autocomplete="family-name" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="field-label" for="email">Email Address <span class="req">*</span></label>
+                <input class="input" type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+              </div>
+
+              <div class="field">
+                <label class="field-label" for="phone">WhatsApp / Phone <span class="req">*</span><span class="field-hint">include country code</span></label>
+                <input class="input" type="text" id="phone" name="phone" placeholder="+234 or +44 or +1..." autocomplete="tel" />
+              </div>
+
+              <div class="field">
+                <label class="field-label">I identify as <span class="req">*</span></label>
+                <div class="radio-cards col-2" id="identityGroup">
+                  <label class="rc">
+                    <input type="radio" name="identity" value="CEO / Business Owner" />
+                    <div class="rc-body">
+                      <div class="rc-indicator"></div>
+                      <div class="rc-text">
+                        <strong>CEO / Business Owner</strong>
+                        <span>Portfolio diversification for business owners</span>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="rc">
+                    <input type="radio" name="identity" value="9-5 Professional" />
+                    <div class="rc-body">
+                      <div class="rc-indicator"></div>
+                      <div class="rc-text">
+                        <strong>9&ndash;5 Professional</strong>
+                        <span>Employment income I want to invest wisely</span>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="rc">
+                    <input type="radio" name="identity" value="Nigerian in the Diaspora / Investor" />
+                    <div class="rc-body">
+                      <div class="rc-indicator"></div>
+                      <div class="rc-text">
+                        <strong>Nigerian in the Diaspora</strong>
+                        <span>Abroad, seeking Nigerian market exposure</span>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="rc">
+                    <input type="radio" name="identity" value="Fund / Institutional Investor" />
+                    <div class="rc-body">
+                      <div class="rc-indicator"></div>
+                      <div class="rc-text">
+                        <strong>Fund / Institutional</strong>
+                        <span>Representing a fund, firm, or vehicle</span>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── Step 2: Location ────────────────────────── -->
+            <div class="step" id="step2">
+              <div class="step-heading">
+                <p class="step-title">Your Location</p>
+                <p class="step-desc">Help us tailor the briefing to your market context and access options.</p>
+              </div>
+
+              <div class="field-row col-2">
+                <div class="field">
+                  <label class="field-label" for="country">Country you're based in <span class="req">*</span></label>
+                  <input class="input" type="text" id="country" name="country" placeholder="e.g. United Kingdom" autocomplete="country-name" />
+                </div>
+                <div class="field">
+                  <label class="field-label" for="city">City / State <span class="req">*</span></label>
+                  <input class="input" type="text" id="city" name="city" placeholder="e.g. London" autocomplete="address-level2" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="field-label">Do you have active business or investments in Nigeria? <span class="req">*</span></label>
+                <div class="radio-cards inline" id="nigeriaGroup">
+                  <label class="rc">
+                    <input type="radio" name="nigeria_connection" value="Yes — active business or investments" />
+                    <div class="rc-body"><div class="rc-indicator"></div><div class="rc-text"><strong>Yes</strong></div></div>
+                  </label>
+                  <label class="rc">
+                    <input type="radio" name="nigeria_connection" value="No — looking to start" />
+                    <div class="rc-body"><div class="rc-indicator"></div><div class="rc-text"><strong>No — looking to start</strong></div></div>
+                  </label>
+                  <label class="rc">
+                    <input type="radio" name="nigeria_connection" value="I am based in Nigeria" />
+                    <div class="rc-body"><div class="rc-indicator"></div><div class="rc-text"><strong>Based in Nigeria</strong></div></div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="field-label" for="investing_since">How long have you been investing?</label>
+                <select class="select" id="investing_since" name="investing_since">
+                  <option value="">Select one</option>
+                  <option value="I am just getting started">I am just getting started</option>
+                  <option value="Less than 2 years">Less than 2 years</option>
+                  <option value="2–5 years">2–5 years</option>
+                  <option value="5–10 years">5–10 years</option>
+                  <option value="More than 10 years">More than 10 years</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- ── Step 3: Investment ─────────────────────── -->
+            <div class="step" id="step3">
+              <div class="step-heading">
+                <p class="step-title">Investment Profile</p>
+                <p class="step-desc">This lets our team prepare the right entry scenarios and risk models for your situation.</p>
+              </div>
+
+              <div class="field">
+                <label class="field-label">Investment experience level <span class="req">*</span></label>
+                <div class="radio-cards" id="experienceGroup">
+                  <label class="rc">
+                    <input type="radio" name="experience" value="First-time investor" />
+                    <div class="rc-body">
+                      <div class="rc-indicator"></div>
+                      <div class="rc-text">
+                        <strong>First-time investor</strong>
+                        <span>I haven't invested in equities before — but I'm ready to start.</span>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="rc">
+                    <input type="radio" name="experience" value="Some experience" />
+                    <div class="rc-body">
+                      <div class="rc-indicator"></div>
+                      <div class="rc-text">
+                        <strong>Some experience</strong>
+                        <span>I've invested before and want stronger analysis and guidance.</span>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="rc">
+                    <input type="radio" name="experience" value="Experienced investor" />
+                    <div class="rc-body">
+                      <div class="rc-indicator"></div>
+                      <div class="rc-text">
+                        <strong>Experienced investor</strong>
+                        <span>Actively investing — I want professional-grade IPO analysis.</span>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="field" style="margin-top:20px;">
+                <label class="field-label">Intended investment range <span class="req">*</span></label>
+                <div class="radio-cards" id="budgetGroup">
+                  <label class="rc">
+                    <input type="radio" name="budget" value="Under ₦500,000" />
+                    <div class="rc-body">
+                      <div class="rc-indicator"></div>
+                      <div class="rc-text"><strong>Under &#x20A6;500,000</strong><span>Entry-level participation</span></div>
+                    </div>
+                  </label>
+                  <label class="rc">
+                    <input type="radio" name="budget" value="₦500,000 – ₦2,000,000" />
+                    <div class="rc-body">
+                      <div class="rc-indicator"></div>
+                      <div class="rc-text"><strong>&#x20A6;500,000 &ndash; &#x20A6;2,000,000</strong><span>Mid-range position</span></div>
+                    </div>
+                  </label>
+                  <label class="rc">
+                    <input type="radio" name="budget" value="₦2,000,000 – ₦10,000,000" />
+                    <div class="rc-body">
+                      <div class="rc-indicator"></div>
+                      <div class="rc-text"><strong>&#x20A6;2,000,000 &ndash; &#x20A6;10,000,000</strong><span>Serious allocation</span></div>
+                    </div>
+                  </label>
+                  <label class="rc">
+                    <input type="radio" name="budget" value="Above ₦10,000,000" />
+                    <div class="rc-body">
+                      <div class="rc-indicator"></div>
+                      <div class="rc-text"><strong>Above &#x20A6;10,000,000</strong><span>Institutional-scale entry</span></div>
+                    </div>
+                  </label>
+                </div>
+                <div class="callout-info">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg>
+                  This does not commit you to any amount. It helps our team prepare entry scenarios matched to your range.
+                </div>
+              </div>
+
+              <div class="field" style="margin-top:20px;">
+                <label class="field-label">Investment time horizon <span class="req">*</span></label>
+                <div class="radio-cards inline" id="horizonGroup">
+                  <label class="rc">
+                    <input type="radio" name="horizon" value="Under 1 year" />
+                    <div class="rc-body"><div class="rc-indicator"></div><div class="rc-text"><strong>Under 1 year</strong></div></div>
+                  </label>
+                  <label class="rc">
+                    <input type="radio" name="horizon" value="1–3 years" />
+                    <div class="rc-body"><div class="rc-indicator"></div><div class="rc-text"><strong>1&ndash;3 years</strong></div></div>
+                  </label>
+                  <label class="rc">
+                    <input type="radio" name="horizon" value="3–5 years" />
+                    <div class="rc-body"><div class="rc-indicator"></div><div class="rc-text"><strong>3&ndash;5 years</strong></div></div>
+                  </label>
+                  <label class="rc">
+                    <input type="radio" name="horizon" value="5+ years" />
+                    <div class="rc-body"><div class="rc-indicator"></div><div class="rc-text"><strong>5+ years</strong></div></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── Step 4: Checklist ──────────────────────── -->
+            <div class="step" id="step4">
+              <div class="step-heading">
+                <p class="step-title">Final Checklist</p>
+                <p class="step-desc">Tell us what matters most so we make the briefing as useful as possible for you.</p>
+              </div>
+
+              <div class="field">
+                <label class="field-label">What do you want from the briefing? <span class="field-hint">(select all that apply)</span></label>
+                <div class="check-cards">
+                  <label class="cc">
+                    <input type="checkbox" name="interests[]" value="Full IPO analysis and sector breakdown" />
+                    <div class="cc-body">
+                      <div class="cc-indicator"><svg viewBox="0 0 10 8" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 3.5 6.5 9 1"/></svg></div>
+                      Full IPO analysis and sector breakdown
+                    </div>
+                  </label>
+                  <label class="cc">
+                    <input type="checkbox" name="interests[]" value="Entry scenario modelling for my budget" />
+                    <div class="cc-body">
+                      <div class="cc-indicator"><svg viewBox="0 0 10 8" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 3.5 6.5 9 1"/></svg></div>
+                      Entry scenario modelling for my budget
+                    </div>
+                  </label>
+                  <label class="cc">
+                    <input type="checkbox" name="interests[]" value="Risk assessment and naira volatility considerations" />
+                    <div class="cc-body">
+                      <div class="cc-indicator"><svg viewBox="0 0 10 8" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 3.5 6.5 9 1"/></svg></div>
+                      Risk assessment and naira volatility considerations
+                    </div>
+                  </label>
+                  <label class="cc">
+                    <input type="checkbox" name="interests[]" value="Live Q&A with the Stulovax Finance analysts" />
+                    <div class="cc-body">
+                      <div class="cc-indicator"><svg viewBox="0 0 10 8" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 3.5 6.5 9 1"/></svg></div>
+                      Live Q&amp;A with the Stulovax Finance analysts
+                    </div>
+                  </label>
+                  <label class="cc">
+                    <input type="checkbox" name="interests[]" value="Written IPO preparation checklist and report" />
+                    <div class="cc-body">
+                      <div class="cc-indicator"><svg viewBox="0 0 10 8" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 3.5 6.5 9 1"/></svg></div>
+                      Written IPO preparation checklist and report
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="field" style="margin-top:18px;">
+                <label class="field-label" for="referral">How did you hear about Stulovax Finance?</label>
+                <select class="select" id="referral" name="referral">
+                  <option value="">Select one</option>
+                  <option value="Instagram">Instagram</option>
+                  <option value="Facebook">Facebook</option>
+                  <option value="X (Twitter)">X (Twitter)</option>
+                  <option value="LinkedIn">LinkedIn</option>
+                  <option value="WhatsApp">WhatsApp</option>
+                  <option value="Referred by someone">Referred by someone</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <p class="decl-label">Please confirm before submitting</p>
+              <div id="declarations">
+                <div class="decl-item" tabindex="0" role="checkbox" aria-checked="false" data-decl="decl_accurate">
+                  <div class="decl-check" id="chk_accurate">
+                    <svg viewBox="0 0 10 8" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 3.5 6.5 9 1"/></svg>
+                  </div>
+                  <input type="checkbox" name="declare_accurate" id="decl_accurate" value="1" style="position:absolute;opacity:0;pointer-events:none;" />
+                  <p class="decl-text">The information I have provided is accurate and I am registering for myself.</p>
+                </div>
+                <div class="decl-item" tabindex="0" role="checkbox" aria-checked="false" data-decl="decl_comms">
+                  <div class="decl-check" id="chk_comms">
+                    <svg viewBox="0 0 10 8" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 3.5 6.5 9 1"/></svg>
+                  </div>
+                  <input type="checkbox" name="declare_comms" id="decl_comms" value="1" style="position:absolute;opacity:0;pointer-events:none;" />
+                  <p class="decl-text">I agree to be contacted by <strong>Stulovax Finance</strong> via email or WhatsApp with briefing updates and IPO information.</p>
+                </div>
+                <div class="decl-item" tabindex="0" role="checkbox" aria-checked="false" data-decl="decl_not_advice">
+                  <div class="decl-check" id="chk_not_advice">
+                    <svg viewBox="0 0 10 8" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 3.5 6.5 9 1"/></svg>
+                  </div>
+                  <input type="checkbox" name="declare_not_advice" id="decl_not_advice" value="1" style="position:absolute;opacity:0;pointer-events:none;" />
+                  <p class="decl-text">I understand this briefing is for <strong>informational purposes</strong> only and does not constitute regulated financial advice.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="form-footer">
+              <p class="status-msg" id="statusMsg" role="alert"></p>
+              <button class="btn-continue" type="button" id="btnContinue">Continue to Location &rarr;</button>
+              <button class="btn-submit" type="submit" id="btnSubmit" style="display:none;">Register for the IPO Briefing &rarr;</button>
+              <button class="btn-back" type="button" id="btnBack" style="display:none;">&larr; Back</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p class="footer-text">
+        &copy; 2025 Stulovax &middot; Finance Division &middot; Lagos, Nigeria<br>
+        <a href="mailto:hello.stulovax@gmail.com">hello.stulovax@gmail.com</a> &middot;
+        <a href="tel:+2348032531089">+234 803 253 1089</a> &middot;
+        <a href="https://stulovax.com">www.stulovax.com</a>
+      </p>
+      <span class="footer-badge">Confidential &middot; STX Finance 2025</span>
+    </footer>
+
+    <script>
+      var currentStep = 1;
+      var totalSteps  = 4;
+
+      var stepMeta = [
+        { label: 'Personal Details', pct: '0%'  },
+        { label: 'Location',         pct: '25%' },
+        { label: 'Investment',       pct: '50%' },
+        { label: 'Checklist',        pct: '75%' },
+      ];
+
+      var continueLabels = [
+        'Continue to Location →',
+        'Continue to Investment →',
+        'Continue to Checklist →',
+      ];
+
+      function showStep(n) {
+        for (var i = 1; i <= totalSteps; i++) {
+          document.getElementById('step' + i).classList.toggle('is-active', i === n);
+        }
+        document.querySelectorAll('.step-btn').forEach(function(btn, idx) {
+          var s = idx + 1;
+          btn.classList.remove('is-active', 'is-done');
+          if (s === n) btn.classList.add('is-active');
+          if (s < n)  btn.classList.add('is-done');
+        });
+        var meta = stepMeta[n - 1];
+        document.getElementById('stepLabel').textContent = 'Step ' + n + ' of ' + totalSteps + ' — ' + meta.label;
+        document.getElementById('progressPct').textContent = meta.pct;
+        document.getElementById('progressFill').style.width = meta.pct;
+        document.getElementById('btnBack').style.display     = n > 1 ? '' : 'none';
+        document.getElementById('btnContinue').style.display = n < totalSteps ? '' : 'none';
+        document.getElementById('btnSubmit').style.display   = n === totalSteps ? '' : 'none';
+        if (n < totalSteps) document.getElementById('btnContinue').textContent = continueLabels[n - 1];
+        clearStatus();
+        document.getElementById('register').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      function showStatus(msg) {
+        var el = document.getElementById('statusMsg');
+        el.textContent = msg;
+        el.classList.add('is-visible');
+      }
+
+      function clearStatus() {
+        var el = document.getElementById('statusMsg');
+        el.textContent = '';
+        el.classList.remove('is-visible');
+      }
+
+      function validateStep(n) {
+        if (n === 1) {
+          var fn = document.getElementById('first_name').value.trim();
+          var ln = document.getElementById('last_name').value.trim();
+          var em = document.getElementById('email').value.trim();
+          var ph = document.getElementById('phone').value.trim();
+          var id = document.querySelector('input[name="identity"]:checked');
+          if (!fn || !ln) { showStatus('Please enter your first and last name.'); return false; }
+          if (!em)        { showStatus('Please enter your email address.'); return false; }
+          if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) { showStatus('Please enter a valid email address.'); return false; }
+          if (!ph)        { showStatus('Please enter your WhatsApp or phone number.'); return false; }
+          if (!id)        { showStatus('Please select how you identify as an investor.'); return false; }
+        }
+        if (n === 2) {
+          var co = document.getElementById('country').value.trim();
+          var ci = document.getElementById('city').value.trim();
+          var ng = document.querySelector('input[name="nigeria_connection"]:checked');
+          if (!co) { showStatus('Please enter the country you are based in.'); return false; }
+          if (!ci) { showStatus('Please enter your city or state.'); return false; }
+          if (!ng) { showStatus('Please answer the Nigeria business question.'); return false; }
+        }
+        if (n === 3) {
+          var ex = document.querySelector('input[name="experience"]:checked');
+          var bu = document.querySelector('input[name="budget"]:checked');
+          var ho = document.querySelector('input[name="horizon"]:checked');
+          if (!ex) { showStatus('Please select your investment experience level.'); return false; }
+          if (!bu) { showStatus('Please select your intended investment range.'); return false; }
+          if (!ho) { showStatus('Please select your investment time horizon.'); return false; }
+        }
+        if (n === 4) {
+          var decls = ['decl_accurate', 'decl_comms', 'decl_not_advice'];
+          for (var i = 0; i < decls.length; i++) {
+            if (!document.getElementById(decls[i]).checked) {
+              showStatus('Please confirm all three declarations before submitting.'); return false;
+            }
+          }
+        }
+        return true;
+      }
+
+      document.getElementById('btnContinue').addEventListener('click', function() {
+        if (!validateStep(currentStep)) return;
+        currentStep++;
+        showStep(currentStep);
+      });
+
+      document.getElementById('btnBack').addEventListener('click', function() {
+        if (currentStep > 1) { currentStep--; showStep(currentStep); }
+      });
+
+      document.querySelectorAll('.decl-item').forEach(function(item) {
+        var id  = item.getAttribute('data-decl');
+        var cb  = document.getElementById(id);
+        var chk = item.querySelector('.decl-check');
+        function toggle() {
+          cb.checked = !cb.checked;
+          chk.classList.toggle('is-checked', cb.checked);
+          item.setAttribute('aria-checked', String(cb.checked));
+        }
+        item.addEventListener('click', toggle);
+        item.addEventListener('keydown', function(e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); toggle(); }
+        });
+      });
+
+      document.getElementById('regForm').addEventListener('submit', function(e) {
+        if (!validateStep(4)) { e.preventDefault(); return; }
+        var btn = document.getElementById('btnSubmit');
+        btn.disabled = true;
+        btn.textContent = 'Submitting…';
+      });
+
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('error')) {
+        showStatus('Something went wrong. Please try again or contact us on WhatsApp.');
+        var btn = document.getElementById('btnSubmit');
+        btn.disabled = false;
+        btn.textContent = 'Register for the IPO Briefing →';
+      }
+
+      showStep(1);
+    </script>
+
+  </body>
+</html>

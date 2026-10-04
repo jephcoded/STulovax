@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-const STULOVAX_CONTACT_EMAIL = 'Hello@stulovax.com';
-const STULOVAX_FROM_EMAIL = 'Hello@stulovax.com';
+const STULOVAX_CONTACT_EMAIL = 'hello@stulovax.com, Remi@stulovax.com';
+const STULOVAX_FROM_EMAIL = 'hello@stulovax.com';
 const STULOVAX_SUCCESS_REDIRECT = 'https://calendly.com/stulovax';
 const STULOVAX_ERROR_REDIRECT = './index.html?consultation=error#consultation';
 

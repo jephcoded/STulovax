@@ -14,9 +14,29 @@ const siteFooter = document.querySelector('.site-footer');
 const consultationForm = document.querySelector('.consultation-form');
 const consultationStatus = document.querySelector('.consultation-status');
 const reduceMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+const mobileCopyQuery = window.matchMedia('(max-width: 520px)');
 let lastScrollY = window.scrollY;
 let heroSlideIndex = 0;
 let heroSlideIntervalId = 0;
+
+const responsiveCopyTargets = Array.from(document.querySelectorAll('[data-mobile-text]'));
+
+const syncResponsiveCopy = () => {
+  responsiveCopyTargets.forEach((target) => {
+    if (!target.dataset.desktopText) {
+      target.dataset.desktopText = target.textContent.replace(/\s+/g, ' ').trim();
+    }
+
+    target.textContent = mobileCopyQuery.matches
+      ? target.dataset.mobileText
+      : target.dataset.desktopText;
+  });
+};
+
+if (responsiveCopyTargets.length) {
+  syncResponsiveCopy();
+  mobileCopyQuery.addEventListener('change', syncResponsiveCopy);
+}
 
 const syncScrollDirection = () => {
   const nextScrollY = window.scrollY;
@@ -116,7 +136,7 @@ if (heroSlides.length) {
 
     heroSlideIntervalId = window.setInterval(() => {
       setHeroSlide(heroSlideIndex + 1);
-    }, 3000);
+    }, 5500);
   };
 
   setHeroSlide(0);
@@ -151,35 +171,35 @@ if (heroSlides.length) {
   startHeroSlideshow();
 }
 
-const revealTargets = document.querySelectorAll(
-  '.section-heading, .problem-brief, .problem-summary, .problem-media-card, .info-card, .service-card, .benefit-card, .country-card, .diaspora-route, .quote-card, .timeline-step, .faq-item, .consultation-card, .metrics-panel article, .compare-column, .ceo-visual-note, .hero-trust > *'
-);
+const revealTargets = Array.from(document.querySelectorAll(
+  '.section-heading, .problem-brief, .solution-copy, .countries-copy, .section-testimonials .section-heading, .section-proof .section-heading, .section-faq .section-heading, .consultation-content-form, .about-hero-copy, .section-about-story .section-heading, .section-about-values .section-heading, .section-about-capabilities .section-heading, .section-about-proof .section-heading, .section-about-contact .about-cta > div'
+));
 
-if ('IntersectionObserver' in window) {
+if ('IntersectionObserver' in window && revealTargets.length && !reduceMotionQuery.matches) {
   const revealObserver = new IntersectionObserver(
-    (entries) => {
+    (entries, observer) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) {
-          if (!reduceMotionQuery.matches) {
-            entry.target.classList.remove('is-visible');
-            entry.target.classList.toggle('reveal-from-up', document.body.classList.contains('is-scrolling-up'));
-          }
           return;
         }
 
-        entry.target.classList.toggle('reveal-from-up', document.body.classList.contains('is-scrolling-up'));
-        entry.target.classList.add('is-visible');
+        var t = entry.target;
+        t.classList.add('is-visible');
+        observer.unobserve(t);
+        t.addEventListener('transitionend', function() {
+          t.style.transitionDelay = '';
+        }, { once: true });
       });
     },
     {
-      threshold: 0.16,
-      rootMargin: '-6% 0px -10% 0px',
+      threshold: 0.18,
+      rootMargin: '0px 0px -10% 0px',
     }
   );
 
   revealTargets.forEach((target, index) => {
     target.classList.add('reveal-on-scroll');
-    target.style.transitionDelay = `${(index % 4) * 70}ms`;
+    target.style.transitionDelay = `${Math.min(index % 3, 2) * 80}ms`;
     revealObserver.observe(target);
   });
 } else {
@@ -299,3 +319,66 @@ if (consultationStatus) {
     consultationStatus.classList.add('is-visible', 'is-error');
   }
 }
+
+// ── AE-style scroll-triggered entrance animations ──────────────────
+(function initSectionAnimations() {
+  if (!('IntersectionObserver' in window) || reduceMotionQuery.matches) return;
+
+  function tag(selector, dir, stagger) {
+    document.querySelectorAll(selector).forEach(function(el, i) {
+      if (el.classList.contains('reveal-on-scroll')) return; // already handled
+      el.classList.add('sx-hide', 'sx-' + dir);
+      if (stagger) el.style.transitionDelay = (i * 110) + 'ms';
+    });
+  }
+
+  // ── Directional panels (slide from side) ──
+  tag('.problem-visual',      'right');
+  tag('.solution-visual',     'left');
+  tag('.ceo-compare',         'left');
+  tag('.ceo-visual',          'right');
+  tag('.countries-visual',    'left');
+  tag('.proof-visual',        'right');
+  tag('.proof-copy',          'left');
+  tag('.faq-visual',          'right');
+
+  // ── Scale-in elements ──
+  tag('.consultation-card',   'scale');
+  tag('.metrics-panel',       'scale');
+
+  // ── Staggered card grids ──
+  tag('.problem-summary',     'up', true);
+  tag('.service-card',        'up', true);
+  tag('.service-offer-card',  'up', true);
+  tag('.compare-column',      'up', true);
+  tag('.quote-card',          'up', true);
+  tag('.faq-item',            'up', true);
+  tag('.signal-card',         'up', true);
+  tag('.proof-badge',         'scale', true);
+  tag('.timeline-step',       'up', true);
+  tag('.benefit-card',        'up', true);
+  tag('.country-card',        'up', true);
+
+  var sxObs = new IntersectionObserver(function(entries, obs) {
+    entries.forEach(function(entry) {
+      if (!entry.isIntersecting) return;
+      var el = entry.target;
+      // Add will-change only just before animating, not upfront for all elements
+      el.style.willChange = 'opacity, transform';
+      el.classList.add('sx-show');
+      obs.unobserve(el);
+      // Clean up: remove animation classes + inline styles after transition ends
+      el.addEventListener('transitionend', function cleanup() {
+        el.classList.remove('sx-hide', 'sx-show');
+        el.style.transitionDelay = '';
+        el.style.willChange = '';
+        el.removeEventListener('transitionend', cleanup);
+      }, { once: true });
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -48px 0px' });
+
+  document.querySelectorAll('.sx-hide').forEach(function(el) {
+    sxObs.observe(el);
+  });
+}());
+
